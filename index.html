@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Olympic history, sports, and medal performance through the Global Olympic Sports Analysis Tableau dashboard.">
+  <title>Global Olympic Sports Analysis</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Olympic Insights home">
+      <span class="brand-mark" aria-hidden="true">O</span>
+      <span>OLYMPIC <b>INSIGHTS</b></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav id="navLinks" aria-label="Main navigation">
+      <a href="#overview">Overview</a>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#about">About</a>
+      <a href="#setup">Publish guide</a>
+    </nav>
+    <a class="nav-cta" href="#dashboard">Explore dashboard <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> DATA-DRIVEN OLYMPIC HISTORY</p>
+        <h1>The Games.<br><span>By the Numbers.</span></h1>
+        <p class="hero-intro">Explore Olympic history, medal performance, sports, and the athletes who shaped the world’s greatest sporting stage.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#dashboard">Explore dashboard <span>↓</span></a>
+          <a class="button button-secondary" href="#about">Discover the project</a>
+        </div>
+        <div class="hero-note"><span class="pulse"></span> An interactive sports analytics project</div>
+      </div>
+      <div class="hero-art" aria-label="Decorative Olympic medal-inspired graphic">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="medal medal-back"></div>
+        <div class="medal medal-front"><div class="medal-inner"><span>★</span><small>EXCELLENCE</small></div></div>
+        <div class="floating-tag tag-top"><span class="tag-icon gold">✦</span><span><b>Global competition</b><small>One world. Many stories.</small></span></div>
+        <div class="floating-tag tag-bottom"><span class="tag-icon blue">↗</span><span><b>Explore the data</b><small>Patterns beyond the podium</small></span></div>
+        <div class="art-caption">EXCELLENCE · UNITY · HISTORY</div>
+      </div>
+    </section>
+
+    <section class="stats" id="overview" aria-label="Project overview">
+      <div class="stat-card"><span class="stat-label">PROJECT FOCUS</span><strong>Olympic <em>history</em></strong><span class="stat-desc">A data-led view of the Games</span></div>
+      <div class="stat-card"><span class="stat-label">ANALYTICS</span><strong>Medals <em>&amp; sports</em></strong><span class="stat-desc">Compare performance and participation</span></div>
+      <div class="stat-card"><span class="stat-label">EXPERIENCE</span><strong>Interactive <em>dashboard</em></strong><span class="stat-desc">Explore insights in Tableau</span></div>
+    </section>
+
+    <section class="dashboard-section section-wrap" id="dashboard">
+      <div class="section-heading">
+        <div><p class="eyebrow">EXPLORE THE DATA</p><h2>Olympic analytics <span>dashboard</span></h2></div>
+        <p class="section-lead">Use the interactive Tableau view below to explore the workbook. Publish your workbook to Tableau Public, then add its visualization URL in <code>script.js</code>.</p>
+      </div>
+      <div class="dashboard-shell">
+        <div class="dashboard-toolbar">
+          <div class="window-dots"><i></i><i></i><i></i></div>
+          <span>GLOBAL OLYMPIC SPORTS ANALYSIS</span>
+          <span class="live-label"><i></i> TABLEAU VIEW</span>
+        </div>
+        <div class="dashboard-frame" id="tableauContainer">
+          <div class="dashboard-placeholder" id="tableauPlaceholder">
+            <div class="placeholder-icon">▥</div>
+            <p class="eyebrow">YOUR TABLEAU DASHBOARD</p>
+            <h3>Your Olympic data, brought to life.</h3>
+            <p>After publishing your workbook to Tableau Public, paste the visualization URL into <code>script.js</code>. The live dashboard will appear here.</p>
+            <a class="button button-primary" href="https://public.tableau.com/" target="_blank" rel="noopener noreferrer">Open Tableau Public ↗</a>
+          </div>
+        </div>
+        <div class="dashboard-footer"><span>Tip: Use Tableau’s filters and tooltips to explore the details.</span><a href="https://public.tableau.com/" target="_blank" rel="noopener noreferrer">Tableau Public ↗</a></div>
+      </div>
+      <p class="privacy-note"><strong>Before publishing:</strong> Tableau Public content is public. Confirm your workbook and data are safe to share.</p>
+    </section>
+
+    <section class="insights-section section-wrap" id="about">
+      <div class="section-heading">
+        <div><p class="eyebrow">ABOUT THE PROJECT</p><h2>More than a <span>medal count.</span></h2></div>
+        <p class="section-lead">This project presents Olympic sports data through visual analytics, helping viewers investigate competition trends and compare performance across events and countries.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card"><div class="feature-icon">◎</div><h3>Explore performance</h3><p>Review medal outcomes and compare results across countries, sports, and Olympic editions—based on the fields available in your workbook.</p><span class="feature-number">01 / ANALYZE</span></article>
+        <article class="feature-card"><div class="feature-icon">⌁</div><h3>Discover patterns</h3><p>Use charts and filters to investigate how participation and sporting performance change over time.</p><span class="feature-number">02 / DISCOVER</span></article>
+        <article class="feature-card"><div class="feature-icon">▤</div><h3>Communicate insights</h3><p>Bring the Tableau dashboard into a simple web experience that is easy to share in a portfolio or project presentation.</p><span class="feature-number">03 / SHARE</span></article>
+      </div>
+    </section>
+
+    <section class="publish-section section-wrap" id="setup">
+      <div class="publish-panel">
+        <div>
+          <p class="eyebrow">GO LIVE</p>
+          <h2>From workbook<br>to <span>the web.</span></h2>
+          <p>Publish the Tableau workbook first, then connect its public visualization to this site. Host the website for free with GitHub Pages.</p>
+        </div>
+        <ol class="steps">
+          <li><span>01</span><div><b>Publish on Tableau Public</b><small>Open the workbook in Tableau and choose Save to Tableau Public.</small></div></li>
+          <li><span>02</span><div><b>Add your visualization URL</b><small>Open <code>script.js</code> and replace the placeholder URL.</small></div></li>
+          <li><span>03</span><div><b>Push to GitHub Pages</b><small>Upload the files to a repository and enable Pages in Settings.</small></div></li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="#home"><span class="brand-mark">O</span><span>OLYMPIC <b>INSIGHTS</b></span></a>
+    <p>Global Olympic Sports Analysis · Tableau + GitHub Pages</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
