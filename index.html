@@ -3,112 +3,340 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore Olympic history, sports, and medal performance through the Global Olympic Sports Analysis Tableau dashboard.">
+  <meta name="description" content="Global Olympic Sports Analysis dashboard and project.">
   <title>Global Olympic Sports Analysis</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
   <header class="site-header">
-    <a class="brand" href="#home" aria-label="Olympic Insights home">
-      <span class="brand-mark" aria-hidden="true">O</span>
+    <a class="brand" href="#home">
+      <span class="brand-mark">O</span>
       <span>OLYMPIC <b>INSIGHTS</b></span>
     </a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+    <button class="menu-toggle" id="menuToggle"
+            aria-label="Toggle navigation"
+            aria-expanded="false">☰</button>
+
     <nav id="navLinks" aria-label="Main navigation">
       <a href="#overview">Overview</a>
-      <a href="#dashboard">Dashboard</a>
+
+      <a href="https://drive.google.com/file/d/1JRs-7vPtgUTJWmDtwnBoEqRP430hegco/view?usp=sharing"
+         target="_blank" rel="noopener noreferrer">Dashboard ↗</a>
+
       <a href="#about">About</a>
-      <a href="#setup">Publish guide</a>
+      <a href="#setup">Project Guide</a>
     </nav>
-    <a class="nav-cta" href="#dashboard">Explore dashboard <span>↗</span></a>
+
+    <a class="nav-cta"
+       href="https://drive.google.com/file/d/1JRs-7vPtgUTJWmDtwnBoEqRP430hegco/view?usp=sharing"
+       target="_blank" rel="noopener noreferrer">
+      Open Dashboard ↗
+    </a>
   </header>
 
   <main>
+
+    <!-- HOME SECTION -->
     <section class="hero" id="home">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="eyebrow-dot"></span> DATA-DRIVEN OLYMPIC HISTORY</p>
-        <h1>The Games.<br><span>By the Numbers.</span></h1>
-        <p class="hero-intro">Explore Olympic history, medal performance, sports, and the athletes who shaped the world’s greatest sporting stage.</p>
+        <p class="eyebrow">
+          <span class="eyebrow-dot"></span>
+          DATA-DRIVEN OLYMPIC HISTORY
+        </p>
+
+        <h1>
+          The Games.<br>
+          <span>By the Numbers.</span>
+        </h1>
+
+        <p class="hero-intro">
+          Explore Olympic history, sports, medal performance,
+          and the athletes who shaped the world's greatest
+          sporting stage through data analytics.
+        </p>
+
         <div class="hero-actions">
-          <a class="button button-primary" href="#dashboard">Explore dashboard <span>↓</span></a>
-          <a class="button button-secondary" href="#about">Discover the project</a>
+          <a class="button button-primary"
+             href="https://drive.google.com/file/d/1JRs-7vPtgUTJWmDtwnBoEqRP430hegco/view?usp=sharing"
+             target="_blank" rel="noopener noreferrer">
+            Explore Dashboard ↗
+          </a>
+
+          <a class="button button-secondary" href="#about">
+            Discover the Project
+          </a>
         </div>
-        <div class="hero-note"><span class="pulse"></span> An interactive sports analytics project</div>
+
+        <div class="hero-note">
+          <span class="pulse"></span>
+          An interactive sports analytics project
+        </div>
       </div>
-      <div class="hero-art" aria-label="Decorative Olympic medal-inspired graphic">
-        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+
+      <div class="hero-art" aria-label="Decorative medal illustration">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+
         <div class="medal medal-back"></div>
-        <div class="medal medal-front"><div class="medal-inner"><span>★</span><small>EXCELLENCE</small></div></div>
-        <div class="floating-tag tag-top"><span class="tag-icon gold">✦</span><span><b>Global competition</b><small>One world. Many stories.</small></span></div>
-        <div class="floating-tag tag-bottom"><span class="tag-icon blue">↗</span><span><b>Explore the data</b><small>Patterns beyond the podium</small></span></div>
-        <div class="art-caption">EXCELLENCE · UNITY · HISTORY</div>
-      </div>
-    </section>
 
-    <section class="stats" id="overview" aria-label="Project overview">
-      <div class="stat-card"><span class="stat-label">PROJECT FOCUS</span><strong>Olympic <em>history</em></strong><span class="stat-desc">A data-led view of the Games</span></div>
-      <div class="stat-card"><span class="stat-label">ANALYTICS</span><strong>Medals <em>&amp; sports</em></strong><span class="stat-desc">Compare performance and participation</span></div>
-      <div class="stat-card"><span class="stat-label">EXPERIENCE</span><strong>Interactive <em>dashboard</em></strong><span class="stat-desc">Explore insights in Tableau</span></div>
-    </section>
-
-    <section class="dashboard-section section-wrap" id="dashboard">
-      <div class="section-heading">
-        <div><p class="eyebrow">EXPLORE THE DATA</p><h2>Olympic analytics <span>dashboard</span></h2></div>
-        <p class="section-lead">Use the interactive Tableau view below to explore the workbook. Publish your workbook to Tableau Public, then add its visualization URL in <code>script.js</code>.</p>
-      </div>
-      <div class="dashboard-shell">
-        <div class="dashboard-toolbar">
-          <div class="window-dots"><i></i><i></i><i></i></div>
-          <span>GLOBAL OLYMPIC SPORTS ANALYSIS</span>
-          <span class="live-label"><i></i> TABLEAU VIEW</span>
-        </div>
-        <div class="dashboard-frame" id="tableauContainer">
-          <div class="dashboard-placeholder" id="tableauPlaceholder">
-            <div class="placeholder-icon">▥</div>
-            <p class="eyebrow">YOUR TABLEAU DASHBOARD</p>
-            <h3>Your Olympic data, brought to life.</h3>
-            <p>After publishing your workbook to Tableau Public, paste the visualization URL into <code>script.js</code>. The live dashboard will appear here.</p>
-            <a class="button button-primary" href="https://drive.google.com/file/d/1JRs-7vPtgUTJWmDtwnBoEqRP430hegco/view?usp=sharing" target="_blank" rel="noopener noreferrer">Open Tableau Public ↗</a>
+        <div class="medal medal-front">
+          <div class="medal-inner">
+            <span>★</span>
+            <small>EXCELLENCE</small>
           </div>
         </div>
-        <div class="dashboard-footer"><span>Tip: Use Tableau’s filters and tooltips to explore the details.</span><a href="https://public.tableau.com/" target="_blank" rel="noopener noreferrer">Tableau Public ↗</a></div>
+
+        <div class="floating-tag tag-top">
+          <span class="tag-icon gold">✦</span>
+          <span>
+            <b>Global Competition</b>
+            <small>One world. Many stories.</small>
+          </span>
+        </div>
+
+        <div class="floating-tag tag-bottom">
+          <span class="tag-icon blue">↗</span>
+          <span>
+            <b>Explore the Data</b>
+            <small>Patterns beyond the podium</small>
+          </span>
+        </div>
+
+        <div class="art-caption">
+          EXCELLENCE · UNITY · HISTORY
+        </div>
       </div>
-      <p class="privacy-note"><strong>Before publishing:</strong> Tableau Public content is public. Confirm your workbook and data are safe to share.</p>
     </section>
 
-    <section class="insights-section section-wrap" id="about">
+    <!-- OVERVIEW SECTION -->
+    <section class="stats" id="overview">
+      <div class="stat-card">
+        <span class="stat-label">PROJECT FOCUS</span>
+        <strong>Olympic <em>History</em></strong>
+        <span class="stat-desc">
+          A data-driven view of the Olympic Games
+        </span>
+      </div>
+
+      <div class="stat-card">
+        <span class="stat-label">ANALYTICS</span>
+        <strong>Medals <em>&amp; Sports</em></strong>
+        <span class="stat-desc">
+          Compare sporting performance
+        </span>
+      </div>
+
+      <div class="stat-card">
+        <span class="stat-label">EXPERIENCE</span>
+        <strong>Interactive <em>Dashboard</em></strong>
+        <span class="stat-desc">
+          Explore the Tableau workbook
+        </span>
+      </div>
+    </section>
+
+    <!-- DASHBOARD SECTION -->
+    <section class="dashboard-section section-wrap" id="dashboard">
+
       <div class="section-heading">
-        <div><p class="eyebrow">ABOUT THE PROJECT</p><h2>More than a <span>medal count.</span></h2></div>
-        <p class="section-lead">This project presents Olympic sports data through visual analytics, helping viewers investigate competition trends and compare performance across events and countries.</p>
+        <div>
+          <p class="eyebrow">EXPLORE THE DATA</p>
+          <h2>Olympic Analytics <span>Dashboard</span></h2>
+        </div>
+
+        <p class="section-lead">
+          Open your Global Olympic Sports Analysis workbook
+          stored on Google Drive.
+        </p>
       </div>
+
+      <div class="dashboard-shell">
+
+        <div class="dashboard-toolbar">
+          <div class="window-dots">
+            <i></i><i></i><i></i>
+          </div>
+
+          <span>GLOBAL OLYMPIC SPORTS ANALYSIS</span>
+
+          <span class="live-label">
+            <i></i> GOOGLE DRIVE
+          </span>
+        </div>
+
+        <div class="dashboard-frame">
+          <div class="dashboard-placeholder">
+
+            <div class="placeholder-icon">▤</div>
+
+            <p class="eyebrow">YOUR OLYMPIC DASHBOARD</p>
+
+            <h3>Your Olympic data, brought to life.</h3>
+
+            <p>
+              Your Tableau workbook is stored on Google Drive.
+              Open the file to access your project.
+              If prompted, download the workbook and open it
+              using Tableau Desktop or Tableau Public Edition.
+            </p>
+
+            <a class="button button-primary"
+               href="https://drive.google.com/file/d/1JRs-7vPtgUTJWmDtwnBoEqRP430hegco/view?usp=sharing"
+               target="_blank" rel="noopener noreferrer">
+              Open My Dashboard ↗
+            </a>
+
+          </div>
+        </div>
+
+        <div class="dashboard-footer">
+          <span>Global Olympic Sports Analysis</span>
+
+          <a href="https://drive.google.com/file/d/1JRs-7vPtgUTJWmDtwnBoEqRP430hegco/view?usp=sharing"
+             target="_blank" rel="noopener noreferrer">
+            View on Google Drive ↗
+          </a>
+        </div>
+
+      </div>
+
+      <p class="privacy-note">
+        <strong>Note:</strong>
+        Make sure your Google Drive sharing settings allow
+        your intended visitors to access the workbook.
+      </p>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="insights-section section-wrap" id="about">
+
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">ABOUT THE PROJECT</p>
+          <h2>More Than a <span>Medal Count.</span></h2>
+        </div>
+
+        <p class="section-lead">
+          This project uses sports data analysis and visualization
+          to explore Olympic history, competition, and performance.
+        </p>
+      </div>
+
       <div class="feature-grid">
-        <article class="feature-card"><div class="feature-icon">◎</div><h3>Explore performance</h3><p>Review medal outcomes and compare results across countries, sports, and Olympic editions—based on the fields available in your workbook.</p><span class="feature-number">01 / ANALYZE</span></article>
-        <article class="feature-card"><div class="feature-icon">⌁</div><h3>Discover patterns</h3><p>Use charts and filters to investigate how participation and sporting performance change over time.</p><span class="feature-number">02 / DISCOVER</span></article>
-        <article class="feature-card"><div class="feature-icon">▤</div><h3>Communicate insights</h3><p>Bring the Tableau dashboard into a simple web experience that is easy to share in a portfolio or project presentation.</p><span class="feature-number">03 / SHARE</span></article>
+
+        <article class="feature-card">
+          <div class="feature-icon">◎</div>
+          <h3>Explore Performance</h3>
+          <p>
+            Explore medal outcomes and compare countries,
+            sports, and Olympic editions using the available data.
+          </p>
+          <span class="feature-number">01 / ANALYZE</span>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">⌁</div>
+          <h3>Discover Patterns</h3>
+          <p>
+            Investigate sporting participation and performance
+            trends through data visualizations.
+          </p>
+          <span class="feature-number">02 / DISCOVER</span>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">▤</div>
+          <h3>Share Insights</h3>
+          <p>
+            Access the project workbook through Google Drive
+            and explore it using compatible Tableau software.
+          </p>
+          <span class="feature-number">03 / SHARE</span>
+        </article>
+
       </div>
     </section>
 
+    <!-- PROJECT GUIDE -->
     <section class="publish-section section-wrap" id="setup">
+
       <div class="publish-panel">
         <div>
-          <p class="eyebrow">GO LIVE</p>
-          <h2>From workbook<br>to <span>the web.</span></h2>
-          <p>Publish the Tableau workbook first, then connect its public visualization to this site. Host the website for free with GitHub Pages.</p>
+          <p class="eyebrow">PROJECT INFORMATION</p>
+
+          <h2>From Data<br>to <span>Insights.</span></h2>
+
+          <p>
+            Global Olympic Sports Analysis combines data analytics,
+            Tableau visualizations, and a web interface to present
+            the project in an accessible format.
+          </p>
+
+          <a class="button button-primary"
+             href="https://drive.google.com/file/d/1JRs-7vPtgUTJWmDtwnBoEqRP430hegco/view?usp=sharing"
+             target="_blank" rel="noopener noreferrer">
+            Access Project Workbook ↗
+          </a>
         </div>
+
         <ol class="steps">
-          <li><span>01</span><div><b>Publish on Tableau Public</b><small>Open the workbook in Tableau and choose Save to Tableau Public.</small></div></li>
-          <li><span>02</span><div><b>Add your visualization URL</b><small>Open <code>script.js</code> and replace the placeholder URL.</small></div></li>
-          <li><span>03</span><div><b>Push to GitHub Pages</b><small>Upload the files to a repository and enable Pages in Settings.</small></div></li>
+
+          <li>
+            <span>01</span>
+            <div>
+              <b>Access the Workbook</b>
+              <small>
+                Open the shared Google Drive file.
+              </small>
+            </div>
+          </li>
+
+          <li>
+            <span>02</span>
+            <div>
+              <b>Explore the Dashboard</b>
+              <small>
+                Download the workbook if needed and open it
+                in compatible Tableau software.
+              </small>
+            </div>
+          </li>
+
+          <li>
+            <span>03</span>
+            <div>
+              <b>Visit the Website</b>
+              <small>
+                Use this website to access the project and
+                learn about its objectives.
+              </small>
+            </div>
+          </li>
+
         </ol>
       </div>
     </section>
+
   </main>
 
+  <!-- FOOTER -->
   <footer class="site-footer">
-    <a class="brand" href="#home"><span class="brand-mark">O</span><span>OLYMPIC <b>INSIGHTS</b></span></a>
-    <p>Global Olympic Sports Analysis · Tableau + GitHub Pages</p>
-    <a href="#home">Back to top ↑</a>
+
+    <a class="brand" href="#home">
+      <span class="brand-mark">O</span>
+      <span>OLYMPIC <b>INSIGHTS</b></span>
+    </a>
+
+    <p>Global Olympic Sports Analysis · Tableau Project</p>
+
+    <a href="#home">Back to Top ↑</a>
+
   </footer>
+
   <script src="script.js"></script>
+
 </body>
 </html>
